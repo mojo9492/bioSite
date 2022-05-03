@@ -1,9 +1,9 @@
 :root {
-	--background: #0f1a20;
-	--primary: #49beea;
-	--secondary: #ffe787;
-	--tertiary: #ada8b6;
-	--accent: #b76d68;
+    --background: #0f1a20;
+    --primary: #49beea;
+    --secondary: #ffe787;
+    --tertiary: #ada8b6;
+    --accent: #b76d68;
     --font-color: #fff;
     --font-family: 'Open Sans', sans-serif;
     --font-light: 300;
@@ -71,7 +71,8 @@ strong {
     padding-left: 0.8rem;
 }
 
-p, article {
+p,
+article {
     color: var(--font-color);
     font-size: var(--font-size-base);
     font-weight: var(--font-light);
@@ -93,7 +94,7 @@ figure {
     place-items: center;
 }
 
-figure > p {
+figure>p {
     color: var(--tertiary);
     font-size: var(--font-size-small);
     font-weight: var(--font-semi-bold);
@@ -105,15 +106,115 @@ img {
     width: 28em;
 }
 
+.Nav-Links {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin-top: .5em;
+    text-align: center;
+}
+
+.Image-Small {
+    height: auto;
+    width: 24em;
+}
+
 .Image-Large {
     height: auto;
     width: 32em;
+}
+
+.Image-Tall {
+    height: 20em;
+    width: auto;
+}
+
+.Image-Active {
+    border: 1px solid var(--accent);
+}
+
+.Timeline-Dot-Container {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    position: relative;
+    left: 0;
+    top: 34.5em;
+}
+
+.Timeline-Dot {
+    height: 2em;
+    width: 2em;
+}
+
+.Timeline-Dot-Active {
+    height: 3em;
+    width: 3em;
+    position: relative;
+    top: -.5em;
 }
 
 .Topic-Content {
     border: 1px solid var(--tertiary);
     border-radius: 5px;
     padding: 1rem;
+}
+
+.Timeline-Span {
+    background: var(--primary);
+    height: 1em;
+    width: 300em;
+    position: relative;
+    left: 0;
+    top: 36em;
+    z-index: -1;
+}
+
+.Timeline-Controls {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 1rem 1rem;
+    position: relative;
+    left: 0;
+    top: 64em;
+}
+
+.Timeline-Controls-Button {
+    display: flex;
+    place-items: center;
+    background: var(--secondary);
+    color: var(--background);
+    border: none;
+    border-radius: .25em;
+    height: 3em;
+    width: auto;
+    font-size: var(--font-medium);
+}
+
+
+.Timeline-Controls-Backward {
+    transform: rotate(180deg);
+    height: 2em;
+    width: 2em;
+    margin-right: .5em;
+}
+
+.Timeline-Controls-Forward {
+    height: 2em;
+    width: 2em;
+    margin-left: .5em;
+}
+
+.Timeline-Carousel {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 1.5rem;
+    width: 148%;
+    align-self: flex-end;
 }
 
 .Hobbies-Image-Display {
@@ -126,4 +227,6 @@ img {
     display: flex;
     flex-flow: row wrap;
     place-content: space-around;
+    position: relative;
+    bottom: 0;
 }

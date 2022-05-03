@@ -15,21 +15,75 @@
 </head>
 
 <body>
+    <div class="Timeline-Span"></div>
+    <!-- todo need to move dots into the corresponding figure so alignment is correct -->
+    <!-- todo need to incorportate a multi page functionality or run a js file for the time line and hobbies to work -->
+    <div class="Timeline-Dot-Container">
+        <img class="Timeline-Dot" src="./icons/dot-inactive.svg" alt="dot">
+        <img class="Timeline-Dot" src="./icons/dot-inactive.svg" alt="dot">
+        <img class="Timeline-Dot-Active" src="./icons/dot-active.svg" alt="dot">
+        <img class="Timeline-Dot" src="./icons/dot-inactive.svg" alt="dot">
+        <img class="Timeline-Dot" src="./icons/dot-inactive.svg" alt="dot">
+    </div>
+    <div class="Timeline-Controls">
+        <button class="Timeline-Controls-Button"><img class="Timeline-Controls-Backward"
+                src="./icons/fast-forward.svg">Previous Event</button>
+        <button class="Timeline-Controls-Button">Next Event<img class="Timeline-Controls-Forward"
+                src="./icons/fast-forward.svg"></button>
+    </div>
     <div id="container">
         <h1>Patrick Star</h1>
-
-        <h2>Topic Heading</h2>
+        <div class="Timeline-Carousel">
+            <figure><img class="Image-Small" src="./images/paramedic.jpeg">
+                <p>Paramedic at the Savannah Fire Department</p>
+            </figure>
+            <figure><img height="100px" width="300px" src="./images/timeline-military-accomplishment.jpeg">
+                <p>Victory Pond Ft Benning, GA</p>
+            </figure>
+            <figure><img class="Image-Tall" src="./images/time-line.jpeg">
+                <p>Married in 2017</p>
+            </figure>
+            <figure><img class="Image-Small" src="./images/ranger-pod.webp">
+                <p>Period of Darkness</p>
+            </figure>
+            <figure>
+                <img class="Image-Small" src="./images/pat-coding.png">
+                <p>Joint Base Lewis-McChord, WA</p>
+            </figure>
+        </div>
+        <h2>2015</h2>
         <div class="Topic-Content">
-            <h3>Subheading</h3>
-            <p><strong>Test</strong> of the biosite text ipsom Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Vel sed exercitationem voluptatum distinctio. Possimus, a illum repellendus repellat consectetur debitis
-                porro! Quam illo libero, deleniti officiis rem nisi mollitia culpa!</p>
-            <h3<Subheading< /h3>
-                <p><strong>Test</strong> of the biosite text ipsom Lorem ipsum dolor sit amet consectetur adipisicing
-                    elit. Vel sed exercitationem voluptatum distinctio. Possimus, a illum repellendus repellat
-                    consectetur debitis porro! Quam illo libero, deleniti officiis rem nisi mollitia culpa!</p>
-                <h4>Minor Heading</h4>
-                <div class="Footer-Links">
+            <h3>Graduated US Army Ranger School</h3>
+            <p><strong>Ranger</strong> School is one of the toughest training courses for which a Soldier can volunteer.
+                Army Rangers are experts in leading Soldiers on difficult missions - and to do this, they need rigorous
+                training. For more than two months, Ranger students train to exhaustion, pushing the limits of their
+                minds and bodies.
+
+                The purpose of the Army's Ranger course is to prepare these Army volunteers - both officers and enlisted
+                Soldiers - in combat arms related functional skills. The Rangers' primary mission is to engage in close
+                combat and direct-fire battles.
+
+                The Ranger Course was conceived during the Korean War and was known as the Ranger Training Command. The
+                Ranger Training Command was inactivated and became the Ranger Department, a branch of the Infantry
+                School at Fort Benning, Ga., Oct. 10, 1951. Its purpose was, and still is, to develop combat skills of
+                selected officers and enlisted men. This requires them to perform effectively as small-unit leaders in a
+                realistic, tactical environment, and under mental and physical stress; approaches that are found in
+                actual combat. Emphasis is placed on the development of individual combat skills and abilities through
+                the application of the principles of leadership, while further developing military skills in the
+                planning and conduct of dismounted infantry, airborne, airmobile, amphibious independent squad, and
+                platoon-size operations. Graduates return to their units to pass on these skills.
+
+                From 1954 to the early 1970's, the Army's goal, though seldom achieved, was to have one Ranger qualified
+                non-commissioned officer per infantry platoon and one officer per company. In an effort to better
+                achieve this goal, in 1954, the Army required all combat arms officers to become Ranger/Airborne
+                qualified.
+
+                The Ranger course has changed little since its inception. Until recently, it was an eight-week course
+                divided into three phases: "crawl," "walk," and "run." The course is now 61 days in duration and remains
+                divided into three phases: "benning," "mountain," and "florida."</p>
+                <h4>Learn More</h4>
+                <a href="https://www.army.mil/ranger/">Army Rangers</a>
+                <div class="Nav-Links">
                     <span>
                         <p>Who is Patrick Star?</p>
                         <a href="./about.html">About</a>
@@ -42,7 +96,9 @@
         </div>
     </div>
     <footer class="Footer-Links">
-        <p>2022 Created by Jonathan Moore check out my 
+        <p>2022 Created by Jonathan Moore</p>
+        <p>
+            Check out my
             <a href="https://github.com/mojo9492">GitHub</a>
         </p>
     </footer>
