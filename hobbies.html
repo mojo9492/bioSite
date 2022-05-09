@@ -12,45 +12,147 @@
 <body>
     <h1>Hobbies</h1>
     <div class="Hobbies-Image-Display">
-        <!-- todo center clicked photo in a carousel -->
-        <figure>
+        <figure class="Hobby Hobby-Active">
+            <img src="./images/hobbies-reading.jpeg" alt="hobbies" />
+        </figure>
+        <figure class="Hobby">
             <img src="./images/hobbies-dancing.jpeg" alt="">
             <p>Patrick Dancing with this Wife</p>
         </figure>
-        <figure>
-            <img src="./images/hobbies-vaesen.jpg" alt="">
-            <p></p>
+        <figure class="Hobby">
+            <img src="./images/hobbies-vaesen-manor.webp" alt="">
+            <p>Enter the Manor</p>
         </figure>
-        <figure>
+        <figure class="Hobby">
             <img src="./images/hobbies-hiking 1.png" alt="">
             <p>Patrick Hiking at his favorite spot in WA</p>
         </figure>
     </div>
-    <h2>Vaesen</h2>
-    <div class="Topic-Content">
-        <div class="Hobbies-Description">
-            <!-- todo add script to dynamically render the description based on the photo clicked -->
-            <article>
-                <strong>A</strong> game of nordic horror roleplaying that is based off a talented Swedish illustrator
-                and author Johan Egerkrans. The theme is centered around Nordic folklore and myths from Scandinavia. The
-                game pits players, who have the magical ability to see creatures called Vaesen, which are invisible to
-                everyone else. The player's character is from a collective call the Society, whose members are deployed
-                in to handle these creatures when they cause chaos. A character has four attributes and twelve skills
-                that make up the character's stats. When player's perform actions, they roll a dice to determine the
-                outcome. The gameplay loop is like so: discover the Vaesen through clues, determine how to defeat the
-                Vaesen and then perform the ritual to drive the creature away.
-            </article>
-            <h4>Learn More</h4>
-            <a href="https://www.tabletopgaming.co.uk/features/how-to-play-vaesen/">Table Top Gaming</a>
-            <div class="Nav-Links">
-                <span>
-                    <p>What is he up to?</p>
-                    <a href="./index.html">Timeline</a>
-                </span>
-                <span>
-                    <p>Who is Patrick Star?</p>
-                    <a href="./about.html">About</a>
-                </span>
+    <div id="Hobby">
+        <h2>Reading</h2>
+        <div class="Topic-Content">
+            <div class="Hobbies-Description">
+                <article>
+                    <strong>Books</strong> are a gateway to a different world or a window to new knowledge. Here are
+                    some of Patrick's favorites.
+                    <ul>
+                        <li>The <i>Dune</i> saga is acclaimed
+                            as the best selling sci-fi novel of all time. Frank Herbert was a science fiction author who
+                            wrote <i>Dune</i> and five of its sequels. The saga take place over a millennia, and covers
+                            humankind's survival in empires of far away planetary systems. It has spawned a franchise,
+                            producing prequel novels, movies and tv shows spanning over the 80's and including the
+                            release of 2021's theatrical <i>Dune</i>.
+                        </li>
+                        <li><i>Discworld</i></li>
+                        <li><i>Mentats of Dune</i></li>
+                        <li><i>Pebbles of Perception</i></li>
+                        <li><i>Unshakable</i></li>
+                        <li><i>No One Goes Alone</i></li>
+                    </ul>
+                </article>
+                <h4>Learn More</h4>
+                <figure>
+                    <img class="Image-Extra-Small" src="./images/dune_fan_cover_by_wlouisdesign_dd2xzbt-fullview.jpg">
+                    <a href="https://en.wikipedia.org/wiki/Dune_(novel)" target="_blank">Wiki</a>
+                </figure>
+                <div class="Nav-Links">
+                    <span>
+                        <p>What is he up to?</p>
+                        <a href="./index.html">Timeline</a>
+                    </span>
+                    <span>
+                        <p>Who is Patrick Star?</p>
+                        <a href="./about.html">About</a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="Hobby" hidden>
+        <h2>Dancing</h2>
+        <div class="Topic-Content">
+            <div class="Hobbies-Description">
+                <article>
+                    <strong>Ballroom</strong> is divided into many types. There is the American style, which includes
+                    the Rhythm and Smooth styles, and the International Style, which in familiarized through latin
+                    dances such as Salsa and Tango, and even the german style like the waltz. Ballroom dance is so
+                    popular that events around the globe host competitions, and tv shows broadcast them on prime-time
+                    TV.
+                </article>
+                <h4>Learn More</h4>
+                <a href="https://blog.dancevision.com/what-is-ballroom-dance" target="_blank">Dance</a>
+                <div class="Nav-Links">
+                    <span>
+                        <p>What is he up to?</p>
+                        <a href="./index.html">Timeline</a>
+                    </span>
+                    <span>
+                        <p>Who is Patrick Star?</p>
+                        <a href="./about.html">About</a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="Hobby" hidden>
+        <h2>Vaesen</h2>
+        <div class="Topic-Content">
+            <div class="Hobbies-Description">
+                <article>
+                    <strong>A</strong> game of nordic horror roleplaying that is based off a talented Swedish
+                    illustrator
+                    and author Johan Egerkrans. The theme is centered around Nordic folklore and myths from Scandinavia.
+                    The
+                    game pits players, who have the magical ability to see creatures called Vaesen, which are invisible
+                    to
+                    everyone else. The player's character is from a collective call the Society, whose members are
+                    deployed
+                    in to handle these creatures when they cause chaos. A character has four attributes and twelve
+                    skills
+                    that make up the character's stats. When player's perform actions, they roll a dice to determine the
+                    outcome. The gameplay loop is like so: discover the Vaesen through clues, determine how to defeat
+                    the
+                    Vaesen and then perform the ritual to drive the creature away.
+                </article>
+                <h4>Learn More</h4>
+                <a href="https://www.tabletopgaming.co.uk/features/how-to-play-vaesen/">Table Top Gaming</a>
+                <div class="Nav-Links">
+                    <span>
+                        <p>What is he up to?</p>
+                        <a href="./index.html">Timeline</a>
+                    </span>
+                    <span>
+                        <p>Who is Patrick Star?</p>
+                        <a href="./about.html">About</a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="Hobby" hidden>
+        <h2>Hiking</h2>
+        <div class="Topic-Content">
+            <div class="Hobbies-Description">
+                <article>
+                    <strong>"I</strong> don't like either the word or the thing. People ought to saunter in the
+                    mountains — not hike! Do you know the origin of that word 'saunter?' It's a beautiful word. Away
+                    back in the Middle Ages people used to go on pilgrimages to the Holy Land, and when people in the
+                    villages through which they passed asked where they were going, they would reply, 'A la sainte
+                    terre,' 'To the Holy Land.' And so they became known as sainte-terre-ers or saunterers. Now these
+                    mountains are our Holy Land, and we ought to saunter through them reverently, not 'hike' through
+                    them." - John Muir
+                </article>
+                <h4>Learn More</h4>
+                <div class="Nav-Links">
+                    <span>
+                        <p>What is he up to?</p>
+                        <a href="./index.html">Timeline</a>
+                    </span>
+                    <span>
+                        <p>Who is Patrick Star?</p>
+                        <a href="./about.html">About</a>
+                    </span>
+                </div>
             </div>
         </div>
     </div>
@@ -62,5 +164,44 @@
         </p>
     </footer>
 </body>
+<script>
+    let active = 0
+    const figuresArray = document.querySelectorAll('.Hobbies-Image-Display figure')
+    const hobbyArray = document.querySelectorAll("#Hobby")
+    const setActive = (length, forwards) => {
+        if (active === length - 1) {
+            active = 0
+        } else {
+            if (forwards) {
+                active++
+            } else {
+                active--
+            }
+        }
+        return active
+    }
+    const activate = (iArray, hArray, activeIndex) => {
+        iArray.forEach((i, index) => {
+            if (index === activeIndex) {
+                i.classList.add("Hobby-Active")
+            } else {
+                i.classList.remove("Hobby-Active")
+            }
+        })
+        hArray.forEach((t, i) => {
+            if (i !== activeIndex) {
+                t.hidden = true
+            } else {
+                t.hidden = false
+            }
+        })
+    }
+
+    figuresArray.forEach((f, i) => {
+        f.addEventListener("click", () => {
+            activate(figuresArray, hobbyArray, i)
+        })
+    })
+</script>
 
 </html>

@@ -15,93 +15,256 @@
 </head>
 
 <body>
-    <div class="Timeline-Span"></div>
-    <!-- todo need to move dots into the corresponding figure so alignment is correct -->
-    <!-- todo need to incorportate a multi page functionality or run a js file for the time line and hobbies to work -->
-    <div class="Timeline-Dot-Container">
-        <img class="Timeline-Dot" src="./icons/dot-inactive.svg" alt="dot">
-        <img class="Timeline-Dot" src="./icons/dot-inactive.svg" alt="dot">
-        <img class="Timeline-Dot-Active" src="./icons/dot-active.svg" alt="dot">
-        <img class="Timeline-Dot" src="./icons/dot-inactive.svg" alt="dot">
-        <img class="Timeline-Dot" src="./icons/dot-inactive.svg" alt="dot">
-    </div>
     <div class="Timeline-Controls">
-        <button class="Timeline-Controls-Button"><img class="Timeline-Controls-Backward"
+        <button id="backward" class="Timeline-Controls-Button"><img class="Timeline-Controls-Backward"
                 src="./icons/fast-forward.svg">Previous Event</button>
-        <button class="Timeline-Controls-Button">Next Event<img class="Timeline-Controls-Forward"
+        <button id="forward" class="Timeline-Controls-Button">Next Event<img class="Timeline-Controls-Forward"
                 src="./icons/fast-forward.svg"></button>
     </div>
     <div id="container">
         <h1>Patrick Star</h1>
         <div class="Timeline-Carousel">
-            <figure><img class="Image-Small" src="./images/paramedic.jpeg">
-                <p>Paramedic at the Savannah Fire Department</p>
-            </figure>
-            <figure><img height="100px" width="300px" src="./images/timeline-military-accomplishment.jpeg">
-                <p>Victory Pond Ft Benning, GA</p>
-            </figure>
-            <figure><img class="Image-Tall" src="./images/time-line.jpeg">
-                <p>Married in 2017</p>
-            </figure>
-            <figure><img class="Image-Small" src="./images/ranger-pod.webp">
-                <p>Period of Darkness</p>
+            <figure>
+                <img class="Image-Small Timeline-img" src="./images/paramedic.jpeg">
+                <p>Paramedic at Southside Fire/EMS</p>
+                <img class="Timeline-Dot  Timeline-Dot-Active" src="./icons/dot-active.svg" alt="dot">
             </figure>
             <figure>
-                <img class="Image-Small" src="./images/pat-coding.png">
+                <img class="Timeline-img" height="100px" width="300px"
+                    src="./images/timeline-military-accomplishment.jpeg">
+                <p>Victory Pond Ft Benning, GA</p>
+                <img class="Timeline-Dot" src="./icons/dot-inactive.svg" alt="dot">
+            </figure>
+            <figure>
+                <img class="Image-Tall Timeline-img" src="./images/time-line.jpeg">
+                <p>Married in 2017</p>
+                <img class="Timeline-Dot" src="./icons/dot-inactive.svg" alt="dot">
+            </figure>
+            <figure>
+                <img class="Image-Small Timeline-img" src="./images/ranger-pod.webp">
+                <p>Period of Darkness</p>
+                <img class="Timeline-Dot" src="./icons/dot-inactive.svg" alt="dot">
+            </figure>
+            <figure>
+                <img class="Image-Small Timeline-img" src="./images/pat-coding.png">
                 <p>Joint Base Lewis-McChord, WA</p>
+                <div class="Timeline-Dot-container">
+                    <img class="Timeline-Dot" src="./icons/dot-inactive.svg" alt="dot">
+                </div>
             </figure>
         </div>
-        <h2>2015</h2>
-        <div class="Topic-Content">
-            <h3>Graduated US Army Ranger School</h3>
-            <p><strong>Ranger</strong> School is one of the toughest training courses for which a Soldier can volunteer.
-                Army Rangers are experts in leading Soldiers on difficult missions - and to do this, they need rigorous
-                training. For more than two months, Ranger students train to exhaustion, pushing the limits of their
-                minds and bodies.
-
-                The purpose of the Army's Ranger course is to prepare these Army volunteers - both officers and enlisted
-                Soldiers - in combat arms related functional skills. The Rangers' primary mission is to engage in close
-                combat and direct-fire battles.
-
-                The Ranger Course was conceived during the Korean War and was known as the Ranger Training Command. The
-                Ranger Training Command was inactivated and became the Ranger Department, a branch of the Infantry
-                School at Fort Benning, Ga., Oct. 10, 1951. Its purpose was, and still is, to develop combat skills of
-                selected officers and enlisted men. This requires them to perform effectively as small-unit leaders in a
-                realistic, tactical environment, and under mental and physical stress; approaches that are found in
-                actual combat. Emphasis is placed on the development of individual combat skills and abilities through
-                the application of the principles of leadership, while further developing military skills in the
-                planning and conduct of dismounted infantry, airborne, airmobile, amphibious independent squad, and
-                platoon-size operations. Graduates return to their units to pass on these skills.
-
-                From 1954 to the early 1970's, the Army's goal, though seldom achieved, was to have one Ranger qualified
-                non-commissioned officer per infantry platoon and one officer per company. In an effort to better
-                achieve this goal, in 1954, the Army required all combat arms officers to become Ranger/Airborne
-                qualified.
-
-                The Ranger course has changed little since its inception. Until recently, it was an eight-week course
-                divided into three phases: "crawl," "walk," and "run." The course is now 61 days in duration and remains
-                divided into three phases: "benning," "mountain," and "florida."</p>
-                <h4>Learn More</h4>
-                <a href="https://www.army.mil/ranger/">Army Rangers</a>
-                <div class="Nav-Links">
-                    <span>
-                        <p>Who is Patrick Star?</p>
-                        <a href="./about.html">About</a>
-                    </span>
-                    <span>
-                        <p>What are his hobbies?</p>
-                        <a href="./hobbies.html">Hobbies</a>
-                    </span>
+        <p style="align-self: center; font-size: .64rem">scroll left and right</p>
+        <div id="Topic-Body">
+            <div id="Timeline-Event">
+                <h2>2005 - 2011</h2>
+                <div class="Topic-Content">
+                    <h3>Paramedic</h3>
+                    <p><strong>The</strong> Southside Fire Department, located in Savannah, GA, provides fire protection
+                        and emergency response services to the Savannah community. The Fire Department's mission is to
+                        prevent the loss of life and property. In addition to responding to fires, the Southside Fire
+                        Department also responds to medical emergencies, motor vehicle accidents, rescue calls, and
+                        incidents involving hazardous materials.</p>
+                    <h4>Learn More</h4>
+                    <a href="https://usfiredept.com/southside-fire-ems-department-21598.html" target="_blank">Savannah
+                        Fire
+                        Rescue</a>
+                    <div class="Nav-Links">
+                        <span>
+                            <p>Who is Patrick Star?</p>
+                            <a href="./about.html">About</a>
+                        </span>
+                        <span>
+                            <p>What are his hobbies?</p>
+                            <a href="./hobbies.html">Hobbies</a>
+                        </span>
+                    </div>
                 </div>
+            </div>
+            <div id="Timeline-Event" hidden>
+                <h2>2015</h2>
+                <div class="Topic-Content">
+                    <h3>Graduated US Army Ranger School</h3>
+                    <p><strong>Ranger</strong> School is one of the toughest training courses for which a Soldier can
+                        volunteer.
+                        Army Rangers are experts in leading Soldiers on difficult missions - and to do this, they need
+                        rigorous
+                        training. For more than two months, Ranger students train to exhaustion, pushing the limits of
+                        their
+                        minds and bodies.
+
+                        The purpose of the Army's Ranger course is to prepare these Army volunteers - both officers and
+                        enlisted
+                        Soldiers - in combat arms related functional skills. The Rangers' primary mission is to engage
+                        in
+                        close
+                        combat and direct-fire battles.
+
+                        The Ranger Course was conceived during the Korean War and was known as the Ranger Training
+                        Command.
+                        The
+                        Ranger Training Command was inactivated and became the Ranger Department, a branch of the
+                        Infantry
+                        School at Fort Benning, Ga., Oct. 10, 1951. Its purpose was, and still is, to develop combat
+                        skills
+                        of
+                        selected officers and enlisted men. This requires them to perform effectively as small-unit
+                        leaders
+                        in a
+                        realistic, tactical environment, and under mental and physical stress; approaches that are found
+                        in
+                        actual combat. Emphasis is placed on the development of individual combat skills and abilities
+                        through
+                        the application of the principles of leadership, while further developing military skills in the
+                        planning and conduct of dismounted infantry, airborne, airmobile, amphibious independent squad,
+                        and
+                        platoon-size operations. Graduates return to their units to pass on these skills.
+
+                        From 1954 to the early 1970's, the Army's goal, though seldom achieved, was to have one Ranger
+                        qualified
+                        non-commissioned officer per infantry platoon and one officer per company. In an effort to
+                        better
+                        achieve this goal, in 1954, the Army required all combat arms officers to become Ranger/Airborne
+                        qualified.
+
+                        The Ranger course has changed little since its inception. Until recently, it was an eight-week
+                        course
+                        divided into three phases: "crawl," "walk," and "run." The course is now 61 days in duration and
+                        remains
+                        divided into three phases: "benning," "mountain," and "florida."</p>
+                    <h4>Learn More</h4>
+                    <a href="https://www.army.mil/ranger/" target="_blank">Army Rangers</a>
+                    <div class="Nav-Links">
+                        <span>
+                            <p>Who is Patrick Star?</p>
+                            <a href="./about.html">About</a>
+                        </span>
+                        <span>
+                            <p>What are his hobbies?</p>
+                            <a href="./hobbies.html">Hobbies</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div id="Timeline-Event" hidden>
+                <h2>2017</h2>
+                <div class="Topic-Content">
+                    <h3>Married</h3>
+                    <p><strong>Shannon</strong> and Patrick met each other country dancing and hit it off. Patrick then
+                        introduced Shannon to ballroom dancing. Shortly after, the two got married in a small ceremony
+                        in her father's yard. They didn't have time to plan an extravagant wedding as Patrick was deploy
+                        soon after.</p>
+                    <div class="Nav-Links">
+                        <span>
+                            <p>Who is Patrick Star?</p>
+                            <a href="./about.html">About</a>
+                        </span>
+                        <span>
+                            <p>What are his hobbies?</p>
+                            <a href="./hobbies.html">Hobbies</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div id="Timeline-Event" hidden>
+                <h2>2013 - 2021</h2>
+                <div class="Topic-Content">
+                    <h3>Period of Darkness</h3>
+                    <p><strong>75th Ranger Regiment</strong> has executed multiple deployments every year since 2001 in
+                        support of the War on Terror.</p>
+                    <h4>Learn More</h4>
+                    <a href="https://www.soc.mil/Rangers/75thRR.html" target="_blank">75th Ranger Regiment Home</a>
+                    <div class="Nav-Links">
+                        <span>
+                            <p>Who is Patrick Star?</p>
+                            <a href="./about.html">About</a>
+                        </span>
+                        <span>
+                            <p>What are his hobbies?</p>
+                            <a href="./hobbies.html">Hobbies</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div id="Timeline-Event" hidden>
+                <h2>2021 - Present</h2>
+                <div class="Topic-Content">
+                    <h3>Ranger Software Developer</h3>
+                    <p><strong>Solving</strong> Ranger problems with Ranger software, Patrick has contribute to multiple
+                        projects that have innovated the way Ranger conducts tactics and training. A first of his kind,
+                        Patrick devotes countless hours improving accountability and readiness in the SOF community.</p>
+                    <div class="Nav-Links">
+                        <span>
+                            <p>Who is Patrick Star?</p>
+                            <a href="./about.html">About</a>
+                        </span>
+                        <span>
+                            <p>What are his hobbies?</p>
+                            <a href="./hobbies.html">Hobbies</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-    <footer class="Footer-Links">
-        <p>2022 Created by Jonathan Moore</p>
-        <p>
-            Check out my
-            <a href="https://github.com/mojo9492">GitHub</a>
-        </p>
-    </footer>
+        <footer class="Footer-Links">
+            <p>2022 Created by Jonathan Moore</p>
+            <p>
+                Check out my
+                <a href="https://github.com/mojo9492">GitHub</a>
+            </p>
+        </footer>
 </body>
+<script>
+    let active = 0
+    const figureArray = document.querySelectorAll(".Timeline-Carousel figure")
+    const dotArray = document.querySelectorAll(".Timeline-Carousel img.Timeline-Dot")
+    const topicArray = document.querySelectorAll("#Timeline-Event")
+    const prevButton = document.querySelector("#backward")
+    const nextButton = document.querySelector("#forward")
+    const setActive = (length, forwards) => {
+        if (active === length - 1) {
+            active = 0
+        } else {
+            if (forwards) {
+                active++
+            } else {
+                active--
+            }
+        }
+        return active
+    }
+
+    const activate = (dArray, tArray, activeIndex) => {
+        dArray.forEach((d, i) => {
+            if (i !== activeIndex) {
+                d.classList.remove("Timeline-Dot-Active")
+                d.src = "./icons/dot-inactive.svg"
+            } else {
+                d.classList.add("Timeline-Dot-Active")
+                d.src = "./icons/dot-active.svg"
+            }
+        })
+        tArray.forEach((t, i) => {
+            if (i !== activeIndex) {
+                t.hidden = true
+            } else {
+                t.hidden = false
+            }
+        })
+    }
+
+    prevButton.addEventListener("click", () => {
+        const prev = setActive(figureArray.length, false)
+        activate(dotArray, topicArray, prev)
+    })
+    nextButton.addEventListener("click", () => {
+        const next = setActive(figureArray.length, true)
+        activate(dotArray, topicArray, next)
+    })
+    figureArray.forEach((f, index) => {
+        f.addEventListener("click", (e) => {
+            activate(dotArray, topicArray, index)
+        })
+    })
+</script>
 
 </html>
