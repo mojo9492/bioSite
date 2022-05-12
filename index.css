@@ -203,9 +203,9 @@ img {
     justify-content: space-between;
     align-items: center;
     margin: 0 1rem 1rem;
-    position: relative;
+    /* position: relative;
     left: 0;
-    top: 64em;
+    top: 64em; */
 }
 
 .Timeline-Controls-Button {

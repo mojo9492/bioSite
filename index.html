@@ -15,12 +15,6 @@
 </head>
 
 <body>
-    <div class="Timeline-Controls">
-        <button id="backward" class="Timeline-Controls-Button"><img class="Timeline-Controls-Backward"
-                src="./icons/fast-forward.svg">Previous Event</button>
-        <button id="forward" class="Timeline-Controls-Button">Next Event<img class="Timeline-Controls-Forward"
-                src="./icons/fast-forward.svg"></button>
-    </div>
     <div id="container">
         <h1>Patrick Star</h1>
         <div class="Timeline-Carousel">
@@ -54,6 +48,12 @@
             </figure>
         </div>
         <p style="align-self: center; font-size: .64rem">scroll left and right</p>
+        <div class="Timeline-Controls">
+            <button id="backward" class="Timeline-Controls-Button"><img class="Timeline-Controls-Backward"
+                    src="./icons/fast-forward.svg">Previous Event</button>
+            <button id="forward" class="Timeline-Controls-Button">Next Event<img class="Timeline-Controls-Forward"
+                    src="./icons/fast-forward.svg"></button>
+        </div>
         <div id="Topic-Body">
             <div id="Timeline-Event">
                 <h2>2005 - 2011</h2>
@@ -220,6 +220,7 @@
     const topicArray = document.querySelectorAll("#Timeline-Event")
     const prevButton = document.querySelector("#backward")
     const nextButton = document.querySelector("#forward")
+    // * grab the scrollbar 
     const setActive = (length, forwards) => {
         if (active === length - 1) {
             active = 0
@@ -241,6 +242,10 @@
             } else {
                 d.classList.add("Timeline-Dot-Active")
                 d.src = "./icons/dot-active.svg"
+                d.scrollIntoView({
+                    behavior: "smooth",
+                    block: "center"
+                })
             }
         })
         tArray.forEach((t, i) => {
